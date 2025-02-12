@@ -61,6 +61,13 @@
     src: local('Montserrat Black'), url('../fonts/Montserrat/Montserrat-Black.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'PlayfairDisplay Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PlayfairDisplay Regular'), url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
