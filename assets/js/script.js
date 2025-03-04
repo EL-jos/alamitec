@@ -55,3 +55,10 @@ $("#el-realisation .owl-carousel").owlCarousel({
         },
     }
 });
+
+$("#el-presentation .el-zone-left .el-block-one .el-container-nav li").on("click", function () {
+    $(this).toggleClass("el-closed");
+});
+
+$( "#tabs" ).tabs();
+

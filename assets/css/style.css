@@ -12,6 +12,7 @@
     --color-title-dark: #222;
     --white: #f2f2f2;
     --blue: rgb(6, 82, 129);
+    --transition: .5s
 }
 
 #el-header-page{
@@ -321,12 +322,19 @@
     color: var(--blue);
     font-size: 8px;
 }
-
+#el-presentation .el-zone-left .el-block-one .el-link-category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    cursor: pointer;
+}
 #el-presentation .el-zone-left .el-block-one a,
 #el-presentation .el-zone-left .el-block-two a{
     display: block;
-    width: 100%;
-    padding: 1rem;
+    width: fit-content;
     font-family: "Montserrat Bold";
     font-size: calc(var(--font-size) * .9);
     text-decoration: none;
@@ -334,15 +342,50 @@
     transition: .3s ease;
     background-color: #f9f9f9;
     color: #666;
+}#el-presentation .el-zone-left .el-block-one .el-link-category a{
+    background-color: transparent;
+}#el-presentation .el-zone-left .el-block-one .svg-inline--fa{
+    rotate: 45deg;
+    transition: var(--transition);
+}#el-presentation .el-zone-left .el-block-one .el-closed .svg-inline--fa{
+    rotate: 0deg;
 }#el-presentation .el-zone-left .el-block-one a.el-active,
-#el-presentation .el-zone-left .el-block-one a:hover{
+#el-presentation .el-zone-left .el-block-one .el-link-category.el-active,
+#el-presentation .el-zone-left .el-block-one a:hover,
+#el-presentation .el-zone-left .el-block-one .el-link-category:hover{
     background-color: var(--blue);
     color: var(--white);
-}#el-presentation .el-zone-left .el-block-one .el-container-nav{
+}#el-presentation .el-zone-left .el-block-one .el-link-category.el-active a,
+#el-presentation .el-zone-left .el-block-one .el-link-category:hover a{
+    color: inherit;
+}#el-presentation .el-zone-left .el-block-one .el-container-nav,
+#el-presentation .el-zone-left .el-block-one .el-container-nav li,
+#el-presentation .el-zone-left .el-block-one .el-container-nav ul{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-}#el-presentation .el-zone-left .el-block-two a{
+    transition: var(--transition);
+}#el-presentation .el-zone-left .el-block-one .el-container-nav ul li{
+    background-color: #f9f9f9;
+    padding: 1rem;
+}#el-presentation .el-zone-left .el-block-one .el-container-nav ul li:hover,
+#el-presentation .el-zone-left .el-block-one .el-container-nav ul li.el-active{
+    background-color: var(--blue);
+    color: var(--white);
+}#el-presentation .el-zone-left .el-block-one .el-container-nav ul li:hover a,
+#el-presentation .el-zone-left .el-block-one .el-container-nav ul li.el-active a{
+    background-color: var(--blue);
+    color: var(--white);
+}#el-presentation .el-zone-left .el-block-one .el-container-nav li.el-closed ul{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}#el-presentation .el-zone-left .el-block-one .el-container-nav ul{
+    margin-left: 1rem;
+}
+
+
+#el-presentation .el-zone-left .el-block-two a{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -452,4 +495,41 @@
 }
 #el-installation-cle-en-main img{
     width: 100%;
+}
+
+#el-prestation .el-container h2{
+    font-family: "Montserrat Bold";
+    font-size: calc(var(--font-size) * 1.1);
+    line-height: calc(var(--font-size) * 1.7);
+}#el-prestation .el-container p{
+    font-family: var(--font-family-text);
+    font-size: calc(var(--font-size) * 1);
+    line-height: calc(var(--font-size) * 1.7);
+    color: var(--color-text);
+}#el-prestation .el-container p strong{
+    text-transform: uppercase;
+    color: var(--color-title-dark);
+    font-family: "Montserrat Bold";
+}#el-prestation .el-container .el-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}#el-prestation .el-container img{
+    width: 100%;
+    border-radius: 4px;
+}#el-prestation .el-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}#el-prestation .el-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}#el-prestation .el-container:nth-child(even){
+    flex-direction: column-reverse;
+    padding: 70px 1rem 35px;
+    background-color: #e0e0e0;
+}#el-prestation .el-content-area{
+    padding: 60px 0 0;
 }
