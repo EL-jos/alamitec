@@ -1,0 +1,67 @@
+@media all and (min-width: 720px) {
+    .el-content-area{
+        width: 720px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .el-content-area{
+        width: 970px;
+    }
+    #el-header-page{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }#el-header-page ul.el-container{
+        display: none;
+    }
+    #el-header-page #el-top{
+        display: flex;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #el-header-page .el-logo img{
+        width: 150px;
+    }
+    #el-header-page{
+        top: -87px;
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .el-content-area{
+        width: 1200px;
+    }
+    #el-header-page .el-logo img{
+        width: 200px;
+    }
+    #el-menu-desktop .el-menu-level-one{
+        font-size: calc(var(--font-size) * .9);
+    }
+}
+
+/* Extra Small (XS): <576px */
+@media (max-width: 575px) {
+    /* Styles pour petits appareils */
+
+}
+
+/* Small (SM): ≥576px et <768px */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles pour petits écrans */
+
+}
+
+/* Medium (MD): ≥768px et <992px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles pour écrans moyens */
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles pour écrans larges */
+
+}
+
+@media (min-width: 1200px) {}
