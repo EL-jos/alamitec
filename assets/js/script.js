@@ -33,6 +33,36 @@ $("#el-clients .owl-carousel, #el-partners .owl-carousel").owlCarousel({
             items: 1,
             nav: true
         },
+        485: {
+            items: 2,
+            nav: true,
+            center: false,
+            margin: 10
+        },
+        768: {
+            items: 3,
+            nav: true,
+            center: false,
+            margin: 10
+        },
+        992: {
+            items: 4,
+            nav: true,
+            center: false,
+            margin: 10
+        },
+        1200: {
+            items: 5,
+            nav: true,
+            center: false,
+            margin: 10
+        },
+        1366: {
+            items: 6,
+            nav: true,
+            center: false,
+            margin: 10
+        },
     }
 });
 

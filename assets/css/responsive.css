@@ -1,12 +1,76 @@
-@media all and (min-width: 720px) {
+@media all and (min-width: 485px) {
+    #el-hero-slider .el-card{
+        height: 312px;
+    }
+    #el-banner-cta .el-content-area{
+        padding: 2rem 1rem;
+    }
+}
+@media all and (min-width: 575px) {
+    .el-content-area{
+        width: 540px;
+    }
+    #el-hero-slider .el-card{
+        height: 370px;
+    }
+}
+
+@media all and (min-width: 768px) {
     .el-content-area{
         width: 720px;
+    }
+    #el-hero-slider .el-card{
+        height: 494px;
+    }
+    #el-hero-slider .el-card p{
+        font-size: calc(var(--font-size) * 1.5);
+    }#el-hero-slider .el-card small{
+        font-size: calc(var(--font-size) * 1);
+    }
+    .el-banner-cta h2{
+        font-size: calc(var(--font-size) * 1.5);
+    }
+    .el-banner-cta a{
+        font-size: calc(var(--font-size) * .8);
+    }
+    .el-banner-cta .el-grid{
+        gap: 1.5rem;
+    }
+    #el-skills .el-grid,
+    #el-portfolio .el-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #el-skills legend,
+    #el-portfolio legend{
+        font-size: calc(var(--font-size) * .8);
+        line-height: calc(var(--font-size) * 1.4);
+    }
+    #el-skills .el-container{
+        gap: 2rem;
+    }#el-portfolio .el-grid{
+        gap: 40px;
+    }
+    #el-clients .owl-carousel,
+    #el-partners .owl-carousel{
+        margin-top: 4rem;
+    }
+    #el-footer-page .el-top{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+    }
+    #el-footer-page .el-block-one{
+        align-items: flex-start;
+    }
+    #el-footer-page .el-container-links ul, 
+    #el-presentation .el-zone-left 
+    .el-block-three ul{
+        gap: 1rem;
     }
 }
 
 @media all and (min-width: 992px) {
     .el-content-area{
-        width: 970px;
+        width: 960px;
     }
     #el-header-page{
         flex-direction: column;
@@ -17,15 +81,48 @@
     }
     #el-header-page #el-top{
         display: flex;
+    }#el-header-page #el-bottom .el-content-area{
+        padding: 1rem 0;
+    }
+    #el-header-page nav{
+        display: block;
+    }
+    #el-hero-slider .el-card{
+        height: 581px;
+    }
+    #el-hero-slider .el-card p,
+    #el-hero-slider .el-card small{
+        padding: 1.25rem;
+    }
+    .el-banner-cta .el-grid{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #el-footer-page .el-top{
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 4rem;
+    }
+    .el-paragraphe{
+        font-size: calc(var(--font-size));
+        line-height: calc(var(--font-size) * 2);
     }
 }
 
 @media all and (min-width: 1200px) {
+    .el-content-area{
+        width: 1140px;
+    }
+
     #el-header-page .el-logo img{
         width: 150px;
     }
     #el-header-page{
         top: -87px;
+    }
+    #el-skills legend,
+    #el-portfolio legend{
+        font-size: calc(var(--font-size) * .9);
+        line-height: calc(var(--font-size) * 1.5);
     }
 }
 
@@ -38,6 +135,19 @@
     }
     #el-menu-desktop .el-menu-level-one{
         font-size: calc(var(--font-size) * .9);
+    }
+    #el-hero-slider .el-card{
+        height: 600px;
+    }
+    #el-footer-page .el-container-links a, #el-presentation .el-zone-left .el-block-three a{
+        font-size: calc(var(--font-size) * .9);
+        line-height: calc(var(--font-size) * 1.5);
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .el-content-area{
+        width: 1320px;
     }
 }
 

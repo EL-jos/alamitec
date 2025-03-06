@@ -43,7 +43,7 @@
     border: none;
     cursor: pointer;
 }#el-header-page #el-bottom .el-content-area{
-    padding: 1rem;
+    padding: 0;
 }#el-header-page #el-bottom .el-grid{
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@
 #el-hero-slider .el-card{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 313px;
 }#el-hero-slider .el-card .el-content{
     position: absolute;
     top: 50%;
@@ -63,23 +63,24 @@
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     width: 90%;
 }#el-hero-slider .el-card p{
     background-color: rgba(0, 0, 0, .5);
     padding: .5rem;
-    font-size: calc(var(--font-size) * 1.5);
+    font-size: calc(var(--font-size) * 1.1);
     font-family: var(--font-family-title);
     color: var(--white);
-    width: 100%;
+    width: fit-content;
     line-height: 2rem;
 }#el-hero-slider .el-card small{
     background-color: rgba(0, 0, 0, .5);
     padding: .5rem;
-    font-size: calc(var(--font-size) * 1);
+    font-size: calc(var(--font-size) * .9);
     font-family: var(--font-family-text);
     color: var(--white);
-    width: 100%;
+    width: fit-content;
     line-height: 1.4rem;
 }#el-hero-slider .owl-dots{
     width: fit-content;
@@ -109,6 +110,8 @@
 
 .el-banner-cta{
     background-color: var(--blue);
+}#el-banner-cta .el-content-area{
+    padding: 1rem;
 }.el-banner-cta h2{
     font-family: 'PlayfairDisplay Italic';
     color: var(--white);
@@ -151,6 +154,7 @@
     position: relative;
     width: fit-content;
     text-transform: uppercase;
+    text-align: center;
 }#el-skills legend::before{
     content: '';
     position: absolute;
@@ -266,6 +270,7 @@
     padding: 1rem 0;
     background-color: #191919;
     z-index: 2;
+    text-align: center;
 }#el-footer-page .el-content-area{
     padding-bottom: 0;
 }
@@ -685,6 +690,7 @@ form .el-col textarea{
 
 #el-header-page nav{
     width: 75%;
+    display: none;
 }
 #el-menu-desktop{
     display: flex;
