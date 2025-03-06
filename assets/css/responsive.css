@@ -5,6 +5,14 @@
     #el-banner-cta .el-content-area{
         padding: 2rem 1rem;
     }
+    #el-title-overlay .el-content a,
+    #el-title-overlay .el-content span{
+        font-family: 'PlayfairDisplay Italic';
+        text-transform: uppercase;
+    }
+    #el-title-overlay .el-content{
+        gap: 1rem;
+    }
 }
 @media all and (min-width: 575px) {
     .el-content-area{
@@ -12,6 +20,9 @@
     }
     #el-hero-slider .el-card{
         height: 370px;
+    }
+    #el-title-overlay .el-content{
+        gap: 1.5rem;
     }
 }
 
@@ -66,6 +77,24 @@
     .el-block-three ul{
         gap: 1rem;
     }
+    #el-title-overlay .el-content{
+        width: 346px;
+    }
+    #el-title-overlay .el-card h1{
+        font-size: calc(var(--font-size) * 2.6); 
+    }
+    #el-presentation .el-zone-right img{
+        width: 50%;
+    }
+    #el-presentation .el-zone-right .el-container-imgs{
+        flex-direction: row;
+    }
+    #el-presentation .el-zone-right .el-grid-partners{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #el-presentation .el-zone-right .el-grid-partners img{
+        width: 100%;
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -106,6 +135,15 @@
         font-size: calc(var(--font-size));
         line-height: calc(var(--font-size) * 2);
     }
+    #el-presentation .el-grid-zone{
+        flex-direction: row;
+    }
+    #el-presentation .el-zone-left{
+        width: 250px;
+    }
+    #el-presentation .el-zone-left .el-block-three a{
+        line-height: calc(var(--font-size) * 1.5);
+    }
 }
 
 @media all and (min-width: 1200px) {
@@ -123,6 +161,13 @@
     #el-portfolio legend{
         font-size: calc(var(--font-size) * .9);
         line-height: calc(var(--font-size) * 1.5);
+    }
+    #el-title-overlay .el-content,
+    #el-title-overlay .el-card h1{
+        margin-left: 2rem;
+    }
+    #el-presentation .el-zone-left{
+        width: 300px;
     }
 }
 
@@ -143,11 +188,19 @@
         font-size: calc(var(--font-size) * .9);
         line-height: calc(var(--font-size) * 1.5);
     }
+    #el-title-overlay .el-content,
+    #el-title-overlay .el-card h1{
+        margin-left: 5rem;
+    }
 }
 
 @media all and (min-width: 1400px) {
     .el-content-area{
         width: 1320px;
+    }
+    #el-title-overlay .el-content,
+    #el-title-overlay .el-card h1{
+        margin-left: 2.5rem;
     }
 }
 
