@@ -474,6 +474,7 @@
 }.el-new .el-footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #8f8f8f;
     padding-top: 1.5rem;
     border-top: 1px solid #eee;
